@@ -1,0 +1,26 @@
+[
+  {
+    "company": "RankRise",
+    "role": "Frontend Developer Internship",
+    "resps": [
+      "Delivered over 11 professional websites using HTML5, CSS3 (including SCSS and BEM), JavaScript, and React best practices.",
+      "Improved website performance by 40% through image compression, caching, and lazy loading of components, which led to a 20% decrease in page load times.",
+      "Included SEO, responsive, multi-platform, accessibility and hosting support, enabling their website to be used by any browser or device in the world.",
+      "Processed API requests with Axios to dynamically fetch and represent data from a cloud server, implementing skeleton loading states, pagination, and dynamic routing, which improved page load times by 23% and reduced bounce rate by 12%."
+    ],
+    "date": "May 2024 - Current"
+  },
+  {
+    "company": "Frontend Simplified",
+    "role": "Programming Tutor",
+    "resps": [
+      "Supported 100+ students learning web technologies including HTML5, CSS3, JavaScript ES6/7, Firebase, and React.",
+      "Taught advanced coding concepts like responsive web development, API requests, and programming best practices such as utilizing dev tools to debug.",
+      "Provided constructive feedback and code reviews to help students improve their coding skills and address areas of improvement.",
+      "Utilized Git version control and the GitHub interface to manage 15 branches, ensuring smooth collaboration in a virtual team environment.",
+      "Collaborated with other mentors to develop and refine the curriculum, ensuring it stays current with the latest trends and technologies in Frontend development.",
+      "Facilitated group discussions and coding challenges to promote a collaborative and engaging learning environment."
+    ],
+    "date": "Nov 2023 - Apr 2024"
+  }
+]
