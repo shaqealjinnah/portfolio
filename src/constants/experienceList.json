@@ -3,7 +3,7 @@
     "company": "RankRise",
     "role": "Frontend Developer Internship",
     "resps": [
-      "Delivered over 11 professional websites using HTML5, CSS3 (including SCSS and BEM), JavaScript, and React best practices.",
+      "Delivered over 7 professional websites using HTML5, CSS3 (including SCSS and BEM), JavaScript, and React best practices.",
       "Improved website performance by 40% through image compression, caching, and lazy loading of components, which led to a 20% decrease in page load times.",
       "Included SEO, responsive, multi-platform, accessibility and hosting support, enabling their website to be used by any browser or device in the world.",
       "Processed API requests with Axios to dynamically fetch and represent data from a cloud server, implementing skeleton loading states, pagination, and dynamic routing, which improved page load times by 23% and reduced bounce rate by 12%."
