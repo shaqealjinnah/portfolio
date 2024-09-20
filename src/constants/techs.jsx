@@ -55,7 +55,7 @@ const techs = [
     title: "Next",
     icon: nextIcon,
     detail:
-      "Next is React framework that provides server-side rendering and static website generation.",
+      "React framework that provides server-side rendering and static website generation.",
   },
 ];
 
