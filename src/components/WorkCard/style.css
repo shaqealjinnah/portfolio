@@ -216,6 +216,10 @@
     display: none;
   }
 
+  .workCard--description {
+    left: 20px;
+  }
+
   .workCard--subtitle-wrapper {
     max-width: 310px;
     overflow: hidden;
