@@ -84,7 +84,13 @@ export default function TechCard({ item }) {
         <div className="workCard--body-bg"></div>
         <div className="workCard--description">
           <h1 className="workCard--title">{item.title}</h1>
-          <h3 className="workCard--subtitle">{item.subtitle}</h3>
+          <div className="workCard--subtitle-wrapper">
+            {item.subtitle.map((tech, index) => (
+              <h3 className="workCard--subtitle" key={index}>
+                {tech}{" "}
+              </h3>
+            ))}
+          </div>
           <p className="workCard--para">{item.para}</p>
           <div className="workCard--links">
             <a
