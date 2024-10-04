@@ -7,9 +7,6 @@ import ParaWriting from "../ParaWriting";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import work1 from "../../assets/Images/work1.png";
-import work2 from "../../assets/Images/work2.png";
-import work3 from "../../assets/Images/work3.png";
 import netflix from "../../assets/Images/netflix-clone.jpg";
 import twitter from "../../assets/Images/twitter-clone.jpg";
 import nft from "../../assets/Images/nft.jpg";
@@ -39,10 +36,9 @@ export default function Projects() {
       subtitle: [
         "HTML",
         "CSS",
-        "JavaScript",
-        "React",
         "Firebase",
         "TypeScript",
+        "NextJS",
       ],
       link: "https://metflix-demo.vercel.app/",
       github: "https://github.com/shaqealjinnah/netflix-clone",
@@ -56,11 +52,10 @@ export default function Projects() {
       subtitle: [
         "HTML",
         "CSS",
-        "JavaScript",
-        "React",
-        "Firebase",
         "TypeScript",
+        "Firebase",
         "Redux",
+        "NextJS",
       ],
       link: "https://twitter-clone-ten-beryl.vercel.app/",
       github: "https://github.com/shaqealjinnah/twitter-clone",

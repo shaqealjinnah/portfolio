@@ -56,6 +56,7 @@
   .techStackSec {
     padding: 40px 60px;
     padding-top: 140px;
+    height: fit-content;
   }
   .techStackSec--head--heading h2 {
     font-size: 42px;
