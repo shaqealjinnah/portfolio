@@ -32,91 +32,112 @@
   border-radius: 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 -20px 80px -20px #ffffff1f;
-}
-
-.workCard--body-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(17 17 17);
-  -webkit-mask-image: linear-gradient(to top, transparent 20%, #000 100%);
-  mask-image: linear-gradient(to top, transparent 20%, #000 100%);
-  opacity: 0.5;
-  transition: all 450ms ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  aspect-ratio: 16 / 9;
+  max-height: 56.25vw;
 }
 
 .workCard--description {
-  position: absolute;
-  top: 50%;
-  left: 90px;
-  opacity: 0;
-  transform: translateY(50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
   color: #fff;
-  transition: opacity 300ms, transform 450ms ease;
-  padding-right: 20px;
+  z-index: 1;
+  gap: 0.25rem;
 }
 
-.workCard--body:hover .workCard--body-bg {
-  opacity: 0.7;
-}
-
-.workCard--body:hover .workCard--description {
-  opacity: 1;
-  transform: translateY(-50%);
-}
 
 .workCard--body:hover .work--img {
   transform: scale(1.07);
   filter: blur(5px);
 }
 
+.workCard--body .workCard--description {
+  transition: 300ms ease-in-out;
+}
+
+.workCard--body:hover .workCard--description {
+  transform: translateY(-65px);
+}
+
+.workCard--body .workCard--links {
+  transition: 300ms ease-in-out;
+}
+
+.workCard--body:hover .workCard--links {
+  transform: translateY(0)
+}
+
 .workCard--body img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  -webkit-mask-image: linear-gradient(to top, transparent 5%, #000 100%);
+  mask-image: linear-gradient(to top, transparent 5%, #000 100%);
+}
+
+.workCard--title {
+  font-size: 20px;
+  color: #fff;
+}
+
+.workCard--title > span {
   display: block;
-  margin: 0 auto;
-  width: auto;
-  height: auto;
 }
 
 .workCard--subtitle-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.workCard--subtitle-tech-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #27272a;
+  padding: 0.5rem;
+  background-color: rgb(17 17 17);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.workCard--subtitle-icon img {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  background-color: rgb(17 17 17);
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .workCard--subtitle {
-  margin-top: 8px;
   position: relative;
-  color: #e9eef1;
+  color: #d4d4d4;
 }
 
-.workCard--subtitle:last-child {
-  padding-right: 0px;
-}
 
-.workCard--subtitle::after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  right: -12px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #e9eef1;
-}
-
-.workCard--subtitle:last-child::after {
-  display: none;
-}
 
 .workCard--para {
-  margin: 16px 0;
+  color: #a3a3a3;
 }
+
 
 .workCard--links {
   display: flex;
   margin-top: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(65px);
+  padding: 1rem;
 }
 
 .react-icon {
@@ -194,6 +215,14 @@
     width: 100%;
   }
 
+  .workCard--subtitle-icon img {
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    min-width: 1.5rem;
+    position: static;
+  }
+
   .workCard--description {
     left: 40px;
   }
@@ -205,13 +234,24 @@
     width: 100%;
   }
 
+  .workCard--subtitle-icon img {
+    display: none;
+  }
+  
+  .workCard--subtitle-wrapper {
+    gap: 0.5rem;
+  }
+
+  .workCard--subtitle {
+    font-size: 14px;
+  }
+
   .workCard--body h1 {
     top: 20px;
     font-size: 32px;
   }
 
   .workCard--body p {
-    bottom: 20px;
     font-size: 14px;
   }
 
@@ -223,9 +263,10 @@
     left: 20px;
   }
 
-  .workCard--subtitle-wrapper {
-    max-width: 310px;
-    overflow: hidden;
+
+
+  .workCard {
+    padding: 0;
   }
 }
 
@@ -234,11 +275,23 @@
     width: 100%;
     min-width: 400px;
   }
+  .workCard--subtitle-icon img {
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    min-width: 1.5rem;
+    position: static;
+  }
 }
 
 @media (min-width: 1600px) {
   .workCard--body img {
     width: 100%;
     height: auto;
+  }
+
+  .workCard--subtitle-icon img {
+    height: 1.5rem;
+    width: 1.5rem;
   }
 }

@@ -11,6 +11,15 @@ import netflix from "../../assets/Images/netflix-clone.jpg";
 import twitter from "../../assets/Images/twitter-clone.jpg";
 import nft from "../../assets/Images/nft.jpg";
 
+import nextIcon from "../../assets/Icon/Tech/next.svg";
+import htmlIcon from "../../assets/Icon/Tech/html.svg";
+import cssIcon from "../../assets/Icon/Tech/css.svg";
+import jsIcon from "../../assets/Icon/Tech/js.svg";
+import tsIcon from "../../assets/Icon/Tech/ts.svg";
+import reactIcon from "../../assets/Icon/Tech/react.svg";
+import reduxIcon from "../../assets/Icon/Tech/redux.svg";
+import firebaseIcon from "../../assets/Icon/Tech/firebase.svg";
+
 export default function Projects() {
   const controls = useAnimation();
   const [ref, inView] = useInView();
@@ -34,13 +43,13 @@ export default function Projects() {
       img: netflix,
       title: "Netflx Clone",
       subtitle: [
-        "HTML",
+        "NextJS",
+        "TypeScript",
         "CSS",
         "Firebase",
-        "TypeScript",
-        "NextJS",
       ],
-      link: "https://metflix-demo.vercel.app/",
+      icon: [nextIcon, tsIcon, cssIcon, firebaseIcon ],
+      link: "https://movieflix-demo.vercel.app/login",
       github: "https://github.com/shaqealjinnah/netflix-clone",
       para: "This app is a replica of Netflix where users can watch their favourite movie trailers. It uses the TMDB API to fetch data and display it to the user. Other features include user authentication, advanced carousel and allows the user to create   their own movie list.",
     },
@@ -50,13 +59,12 @@ export default function Projects() {
       img: twitter,
       title: "Twitter Clone",
       subtitle: [
-        "HTML",
-        "CSS",
-        "TypeScript",
-        "Firebase",
-        "Redux",
         "NextJS",
+        "TypeScript",
+        "Redux",
+        "Firebase",
       ],
+      icon: [nextIcon, tsIcon, reduxIcon, firebaseIcon ],
       link: "https://twitter-clone-ten-beryl.vercel.app/",
       github: "https://github.com/shaqealjinnah/twitter-clone",
       para: "This app is a replica of Twitter where users can create, like, reply and delete Tweets. User-generated data is stored in Firebase and uses NextAuthJS to display a user's name and profile picture on Tweets.",
@@ -67,6 +75,7 @@ export default function Projects() {
       img: nft,
       title: "NFT Marketplace",
       subtitle: ["HTML", "CSS", "JavaScript", "React"],
+      icon: [htmlIcon, cssIcon, jsIcon, reactIcon ],
       link: "https://shaqeal-internship.vercel.app/",
       github: "https://github.com/shaqealjinnah/shaqeal-internship",
       para: "NFT Marketplace is an application which allows users to sort NFTs by price, author, owner and more. Fetched data from an NFT API and dynamically routed data with skeleton loading states for a better user experience.",

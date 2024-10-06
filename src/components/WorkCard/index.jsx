@@ -81,35 +81,64 @@ export default function TechCard({ item }) {
         >
           <img src={item.img} alt="" className="work--img" />
         </motion.span>
-        <div className="workCard--body-bg"></div>
         <div className="workCard--description">
-          <h1 className="workCard--title">{item.title}</h1>
-          <div className="workCard--subtitle-wrapper">
+          <h2 className="workCard--title">
+            <FadeText controls={controls} delay={delay}>
+              {item.title}
+            </FadeText>
+          </h2>
+          {/* <div className="workCard--subtitle-wrapper">
             {item.subtitle.map((tech, index) => (
               <h3 className="workCard--subtitle" key={index}>
-                {tech}{" "}
+                <FadeText controls={controls} delay={delay}>
+                  {tech}
+                </FadeText>
               </h3>
             ))}
+          </div> */}
+          <div className="workCard--subtitle-wrapper">
+            {item.icon.map((tech, index) => (
+              <motion.div
+                initial="hidden"
+                animate={controls}
+                variants={opacityVariants}
+              >
+                <div key={index} className="workCard--subtitle-tech-wrapper">
+                  <div className="workCard--subtitle-icon">
+                    <img src={tech} alt="tech icon" />
+                  </div>
+                  <h3 key={index} className="workCard--subtitle">
+                    <FadeText controls={controls} delay={delay}>
+                      {item.subtitle[index]}
+                    </FadeText>
+                  </h3>
+                </div>
+              </motion.div>
+            ))}
           </div>
-          <p className="workCard--para">{item.para}</p>
-          <div className="workCard--links">
-            <a
-              className="react-icon"
-              href={item.github}
-              target={"_blank"}
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-            </a>
-            <a
-              className="react-icon"
-              href={item.link}
-              target={"_blank"}
-              rel="noopener noreferrer"
-            >
-              <FaLink />
-            </a>
-          </div>
+          <p className="workCard--para">
+            <FadeText controls={controls} delay={delay}>
+              {item.para}
+            </FadeText>
+          </p>
+        </div>
+        <div className="workCard--links">
+          <a
+            className="react-icon"
+            href={item.github}
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a
+            className="react-icon"
+            href={item.link}
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            <FaLink />
+          </a>
         </div>
         {/* <h1>
           <HideText controls={controls} delay={delay}>
