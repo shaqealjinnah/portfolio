@@ -102,8 +102,9 @@ export default function TechCard({ item }) {
                 initial="hidden"
                 animate={controls}
                 variants={opacityVariants}
+                key={index}
               >
-                <div key={index} className="workCard--subtitle-tech-wrapper">
+                <div className="workCard--subtitle-tech-wrapper">
                   <div className="workCard--subtitle-icon">
                     <img src={tech} alt="tech icon" />
                   </div>
@@ -130,6 +131,7 @@ export default function TechCard({ item }) {
             rel="noopener noreferrer"
           >
             <FaGithub />
+            <div className="react-icon--title">Github</div>
           </a>
           <a
             className="react-icon"
@@ -138,7 +140,8 @@ export default function TechCard({ item }) {
             rel="noopener noreferrer"
           >
             <FaLink />
-          </a>
+            <div className="react-icon--title">Link</div>
+            </a>
         </div>
         {/* <h1>
           <HideText controls={controls} delay={delay}>

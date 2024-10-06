@@ -103,7 +103,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid #27272a;
-  padding: 0.5rem;
+  padding: 6px 8px;
   background-color: rgb(17 17 17);
   border-radius: 10px;
   color: #fff;
@@ -122,8 +122,6 @@
   position: relative;
   color: #d4d4d4;
 }
-
-
 
 .workCard--para {
   color: #a3a3a3;
@@ -146,25 +144,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  font-size: 25px;
-  height: 45px;
-  width: 45px;
-  color: #f70041;
-  padding: 12px;
+  gap: 0.35rem;
+  text-decoration: none;
+  font-size: 16px;
+  height: auto;
+  width: 100%;
+  color: rgb(17 17 17);
+  padding: 4px 8px;
   background-color: #fff;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   margin-right: 12px;
 }
 
 .react-icon:hover {
-  background-color: #f70041;
-  color: #fff;
-  border-radius: 0.75rem;
+  background-color: #fff;
+  opacity: 0.8;
 }
 
 .react-icon:active {
   transform: scale(0.8);
+}
+
+.react-icon--title {
+  font-size: 14px;
 }
 
 /* .workCard--body p {
