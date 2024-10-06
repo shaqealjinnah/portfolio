@@ -49,7 +49,7 @@ export default function Projects() {
         "Firebase",
       ],
       icon: [nextIcon, tsIcon, cssIcon, firebaseIcon ],
-      link: "https://movieflix-demo.vercel.app/login",
+      link: "https://netflix-demo1.vercel.app/login",
       github: "https://github.com/shaqealjinnah/netflix-clone",
       para: "This app is a replica of Netflix where users can watch their favourite movie trailers. It uses the TMDB API to fetch data and display it to the user. Other features include user authentication, advanced carousel and allows the user to create   their own movie list.",
     },
